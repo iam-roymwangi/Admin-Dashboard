@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+
+</head>
+<body>
+    <div class="grid-container">
+       <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+            <span class="material-icons-outlined">menu_open</span>
+           </div>
+           <div class="header-left">
+            <span class="material-icons-outlined">search</span>
+           </div>
+           <div class="header-right">
+            <span class="material-icons-outlined">notifications</span>
+            <span class="material-icons-outlined">email</span>
+            <span class="material-icons-outlined">account_circle</span>
+           </div>
+       </header>
+       
+
+       <aside id="sidebar">
+        <div class="sidebar-title">
+            <div class="sidebar-brand">
+                <span class="material-icons-outlined">inventory</span> Roy's Inventory
+            </div>
+            <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">dashboard</span> Dashboard
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">inventory_2</span> Products
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">fact_check</span> Inventory
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">add_shopping_cart</span> Purchase Orders
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">shopping_cart</span> Sales Orders
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">poll</span> Reports
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">settings</span> Settings
+            </li>
+        </ul>
+
+       </aside>
+
+       <main class="main-container">
+        <div class="main-title">
+            <p class="font-weight-bold">DASHBOARD</p>
+        </div>
+        <div class="main-cards">
+            <div class="card">
+                <div class="card-inner">
+                    <p class="text-primary">PRODUCTS</p>
+                    <span class="material-icons-outlined text-blue" style="color: blue;">inventory_2</span>
+
+                </div>
+                <span class="text-primary font-weight-bold">249</span>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <p class="text-primary">PURCHASE ORDERS</p>
+                    <span class="material-icons-outlined text-orange" style="color: orange;">add_shopping_cart</span>
+
+                </div>
+                <span class="text-primary font-weight-bold">71</span>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <p class="text-primary">SALES ORDERS</p>
+                    <span class="material-icons-outlined text-green" style="color: red;">shopping_cart</span>
+
+                </div>
+                <span class="text-primary font-weight-bold">62</span>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <p class="text-primary">INVENTORY ALERTS</p>
+                    <span class="material-icons-outlined text-red" style="color: green;">notification_important</span>
+
+                </div>
+                <span class="text-primary font-weight-bold">15</span>
+            </div>
+        </div>
+       </main>
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
